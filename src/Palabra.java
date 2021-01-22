@@ -26,15 +26,18 @@ public class Palabra {
 			}
 			if(cierto) {
 				aciertos++;
-				System.out.println(dichas.size());
 			}else {
-				System.out.println("Error!!!!!!!!");
+				System.out.println("Partida finalizada");
+				System.out.println("Has acertado " + aciertos + " de " + palabras.size());
 			}
 		
 			
 		}
 		
-		System.out.println("Has acertado " + aciertos + " de " + palabras.size());
+		if(dichas.size()==palabras.size()) {
+			System.out.println("Eres un crack!!!!");
+		}
+		
 	}
 	
 	public static String dimePalabra(ArrayList <String> palabras, ArrayList <String> dichas) {
@@ -47,6 +50,7 @@ public class Palabra {
 			
 			if(palabra.equals(dichas.get(k))) {
 				existe=true;
+				break;
 			}
 		}
 		

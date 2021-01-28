@@ -34,6 +34,8 @@ public class Palabra {
 			
 		}
 		
+		dato.close();
+		
 		if(dichas.size()==palabras.size()) {
 			System.out.println("Eres un crack!!!!");
 		}

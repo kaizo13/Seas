@@ -1,5 +1,5 @@
-	import java.util.*;
-	import java.math.*;
+	import java.util.ArrayList;
+import java.util.Scanner;
 public class Loteria {
 
 	public static void main(String[] args) {
@@ -44,6 +44,8 @@ public class Loteria {
 			
 			
 		}while(entrada!=0 && intentos<15 && aciertos<9);
+		
+		dato.close();
 		
 		System.out.println();
 		if(aciertos==9) {

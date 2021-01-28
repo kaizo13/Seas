@@ -1,5 +1,5 @@
 import java.util.*;
-import java.math.*;
+
 public class Pregunta {
 
 	public static void main(String[] args) {
@@ -39,6 +39,8 @@ public class Pregunta {
 			System.out.println(preguntas[index][0]);
 			entrada=Integer.parseInt(dato.nextLine());
 		};
+		
+		dato.close();
 		
 		if(intentos==0 || entrada != respuesta) {
 			System.out.println("La patata explotó");

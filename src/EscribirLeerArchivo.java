@@ -22,7 +22,7 @@ public class EscribirLeerArchivo {
 		int caracter;
 		do {
 			caracter=leer.read();
-			System.out.println(caracter);
+			System.out.print((char) caracter + " ");
 		}while(caracter!=-1);
 		leer.close();
 	}
@@ -33,7 +33,7 @@ public class EscribirLeerArchivo {
 		EscribirLeerArchivo cosa=new EscribirLeerArchivo("hola.txt");
 		
 		try {
-//			cosa.escribirArchivo();
+			cosa.escribirArchivo();
 			cosa.leerArchivo();
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
